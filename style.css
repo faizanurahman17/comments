@@ -13,7 +13,7 @@ body {
     align-items: center;
 }
 .container {
-    max-width: 800px;
+    width: 450px;
     margin: 0 auto;
 }
 .profile-section {

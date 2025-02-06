@@ -1,0 +1,138 @@
+*{
+    margin: 0;padding: 0;
+}
+body {
+    width: 100svw;
+    height: 100svh;
+    font-family: Arial, sans-serif;
+
+    background: #406bad;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.profile-section {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+#userName{
+    width: auto;
+    color: #000;
+    font-size: 1.5rem;
+    padding: 10px 5px;
+    border-radius: .5rem;
+    border: none;
+}
+.avatar-upload {
+    position: relative;
+    cursor: pointer;
+}
+.avatar-upload input {
+    display: none;
+}
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.comment-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.comment {
+    margin: 15px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: #f0f2f5;
+}
+.reply {
+    margin-left: 40px;
+    border-left: 2px solid #ddd;
+    padding-left: 10px;
+}
+.reaction-btn {
+    cursor: pointer;
+    position: relative;
+    margin-left: 20px;
+}
+.reactions-picker {
+    position: absolute;
+    background: white;
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    width: 25px;
+
+}
+.reaction-emoji {
+    cursor: pointer;
+    font-size: 20px;
+    margin: 0 2px;
+    transition: all 0.25s;
+}
+.reaction-emoji:hover {
+    font-size: 2.5rem;
+}
+.time {
+    font-size: 0.8em;
+    color: #666;
+}
+.reaction-count {
+    font-size: 0.9em;
+    color: #666;
+    margin-left: 5px;
+}
+.editable-username {
+    cursor: pointer;
+    border-bottom: 1px dashed #666;
+}
+.clear-btn {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.clear-btn:hover {
+    background: #ff1a1a;
+}
+.postbtn{
+    height: 50px;
+    width: 150px;
+    font-size: 1rem;
+    background: #e8e8e8;
+}
+.topbtn{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.thebtn{
+    margin: 20px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    border: none;
+    background-color: none;
+    font-size: 1rem;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment practice</title>
+    <link rel="icon" href="icon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=delete" />
+    <style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 48
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-section">
+            <div class="avatar-upload">
+                <input type="file" id="avatarInput" accept="image/*">
+                <img src="profile.png" class="avatar" id="userAvatar">
+            </div>
+            <input type="text" id="userName" placeholder="Il tuo nome">
+        </div>
+        
+        <div class="comment-box">
+            <div id="commentsContainer"></div>
+            <div class="topbtn">
+                <textarea id="commentInput" placeholder="Scrivi un commento..." rows="3" class="thebtn"></textarea>
+                <button onclick="postComment()" class="postbtn thebtn">Pubblica commento</button>
+                <button class="clear-btn thebtn" onclick="clearComments()"><i class="material-symbols-outlined">delete</i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
